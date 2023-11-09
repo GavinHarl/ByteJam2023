@@ -4,13 +4,101 @@
         <meta charset="UTC-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to VOGEL</title>
-        <link rel="stylesheet" href="css/signup.css">
-        <link rel="icon" href="./images/TwitterLogo.png" type="image">
         <script src="script.js" defer></script>
+        <style>
+html {
+    background-color: lightblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+aside h1{
+    font-size: 35px;
+    color: #00aced;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+#pictureRow {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+#pictureRow img {
+    width: 125px;
+    margin: 0 10px;
+    border: 2px solid #00aced;
+    border-radius: 10px;
+}
+
+footer{
+    min-height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+footer p {
+    font-size: 16px;
+    color: black;
+    margin: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #pictureRow {
+        display: none;
+    }
+}
+        </style>
     </head>
     <body>
         <header>
-            <img src="./images/TwitterLogo.png" alt="TwitterIcon">
+            <img src="../static/TwitterLogo.png" alt="TwitterIcon">
             <h1>VOGEL</h1>
         </header>
         <main>
@@ -19,27 +107,29 @@
                 <p>Everything I know about life I learned from the 90s.<br>Take a blast to the past.<br>Make VOGEL Great Again.</p>
             </aside>
             <section>
-                <form action="">
+                <form method="POST" action="">
                     <h2>New to VOGEL? Sign Up!</h2>
-                    <label for="username">USERNAME</label>
-                    <input type="text" id="username" name="username">
-                    <label for="password">PASSWORD</label>
-                    <input type="text" id="password" name="password"></input>
-                    <button type="submit">SIGN UP</button>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="user">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="pass">
+                    <label for="picture">Picture</label>
+                    <input type="text" id="picture" name="pic">
+                    <button type="submit">Sign up</button>
                 </form>
             </section>
         </main>
         <div id="pictureRow">
-            <img src="./images/90s images.jpg" alt="90sTV">
-            <img src="./images/90s movies.jpg" alt="90smovies">
-            <img src="./images/90sFOOD.jpg" alt="90sFood">
-            <img src="./images/90sGames.jpg" alt="90sGames">
-            <img src="./images/90sMovies.jpg" alt="90sMovies">
-            <img src="./images/90sTOYS.jpg" alt="90sTOYS">
-            <img src="./images/backtothe90s.jpg" alt="Backtothe90s">
-            <img src="./images/mrBucket.jpg" alt="bucket">
-            <img src="./images/90s movies.jpg" alt="movies">
-            <img src="./images/retroNBA.gif" alt="retroNBA">
+            <img src="../static/90s images.jpg" alt="90sTV">
+            <img src="../static/90s movies.jpg" alt="90smovies">
+            <img src="../static/90sFOOD.jpg" alt="90sFood">
+            <img src="../static/90sGames.jpg" alt="90sGames">
+            <img src="../static/90sMovies.jpg" alt="90sMovies">
+            <img src="../static/90sTOYS.jpg" alt="90sTOYS">
+            <img src="../static/backtothe90s.jpg" alt="Backtothe90s">
+            <img src="../static/mrBucket.jpg" alt="bucket">
+            <img src="../static/90s movies.jpg" alt="movies">
+            <img src="../static/retroNBA.gif" alt="retroNBA">
             
         </div>
         <footer>
