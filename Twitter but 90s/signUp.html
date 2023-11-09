@@ -4,6 +4,7 @@
         <meta charset="UTC-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to VOGEL</title>
+        <link rel="icon" href="./images/TwitterLogo.png" type="image">
         <script src="script.js" defer></script>
         <style>
 html {
@@ -44,15 +45,37 @@ aside h1{
     font-size: 35px;
     color: #00aced;
 }
-
-form {
+section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-form input {
+
+#signInForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+#signInForm input {
     font-size: 16px;
     border-radius: 5px;
     margin-bottom: 7px;
+}
+#profileSelect {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 5px 5px;
+}
+#profileSelect label {
+    object-fit: cover;
+}
+
+#profileSelect label img {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px;
+    border: 2px solid #00aced;
 }
 
 #pictureRow {
@@ -107,14 +130,63 @@ footer p {
                 <p>Everything I know about life I learned from the 90s.<br>Take a blast to the past.<br>Make VOGEL Great Again.</p>
             </aside>
             <section>
-                <form method="POST" action="">
+                <h2>Select a Profile:</h2>
+                <form action="" id="profileSelect">
+                    <label>
+                        <input type="radio" name="profile" value="blockbuster">
+                        <img src="./images/profilePictures/Blockbuster video.png" alt="blockbusterProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="bopIt">
+                        <img src="./images/profilePictures/bop it.jpg" alt="bopitProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="CardGirl">
+                        <img src="./images/profilePictures/Card girl.jpg" alt="cardgirlProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="Cartoon">
+                        <img src="./images/profilePictures/Cartoon.jpg" alt="cartoonProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="DaffyDuck">
+                        <img src="./images/profilePictures/Daffy duck.jpg" alt="daffyProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="Dio">
+                        <img src="./images/profilePictures/DIO.jpg" alt="DioProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="furby">
+                        <img src="./images/profilePictures/Furby.jpg" alt="furbyProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="gutsBerserk">
+                        <img src="./images/profilePictures/Guts Berserk.jpg" alt="gutsBerserkProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="joestar">
+                        <img src="./images/profilePictures/Joseph Joestar.jpg" alt="josestarProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="nintendo64">
+                        <img src="./images/profilePictures/Nintendo 64.jpg" alt="nintendo64Profile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="roboDog">
+                        <img src="./images/profilePictures/robo dog.jpg" alt="roboDogProfile">
+                    </label>
+                    <label>
+                        <input type="radio" name="profile" value="tomagatchi">
+                        <img src="./images/profilePictures/tomagatchi.jpg" alt="tamagatchiProfile">
+                    </label>
+                </form>
+                <form method="POST" action="" id="signInForm"> <!-- USERNAME AND PASSWORD -->
                     <h2>New to VOGEL? Sign Up!</h2>
                     <label for="username">Username</label>
                     <input type="text" id="username" name="user">
                     <label for="password">Password</label>
                     <input type="text" id="password" name="pass">
-                    <label for="picture">Picture</label>
-                    <input type="text" id="picture" name="pic">
                     <button type="submit">Sign up</button>
                 </form>
             </section>
