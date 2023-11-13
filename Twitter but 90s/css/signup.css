@@ -1,0 +1,164 @@
+/* Global CSS */
+html {
+    background-color: lightblue;
+}
+
+body{
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+
+header img:hover{
+    background-color: aquamarine;
+    padding: 200px;
+    border: 10px solid saddlebrown;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    text-shadow: 4px 4px yellow;
+    margin: 30px;   
+}
+
+/* Main (aside/section) */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+/* Aside - "Follow Your Interests" */
+
+aside h1{
+    font-size: 35px;
+    color: #00aced;
+    text-shadow: 4px 4px black;
+}
+
+/* Section - Profile Selection and Sign Up Form */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2{
+    color: hotpink;
+    font-size: 25px;
+    text-shadow: 3px 3px red;
+}
+
+#profileSelect {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 5px 5px;
+}
+
+#profileSelect label {
+    object-fit: cover;
+}
+
+#profileSelect label img {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px;
+    border: 2px solid #00aced;
+    box-shadow: 10px 10px black;
+}
+
+#signInForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#signInForm input {
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+/* Picture Row */
+#pictureRow {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+#pictureRow img {
+    width: 125px;
+    margin: 0 10px;
+    border: 2px solid #00aced;
+    border-radius: 10px;
+    box-shadow: 10px 10px blue;
+}
+
+/* Footer */
+footer{
+    min-height: 40px;
+    width: 100%;
+    background-color: greenyellow;
+    border: 3px dashed red;
+    text-align: center;
+}
+
+footer small {
+    color: black;
+    margin: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1500px) {
+    #pictureRow img:nth-child(6n) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #pictureRow img:nth-child(4n) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #pictureRow img:nth-child(3n) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    #profileSelect {
+        grid-template-columns: auto auto auto auto;
+        gap: 5px 5px;
+    }
+    #pictureRow {
+        display: none;
+    }
+}

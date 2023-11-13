@@ -4,124 +4,12 @@
         <meta charset="UTC-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to VOGEL</title>
+        <link rel="stylesheet" href="css/signup.css">
         <link rel="icon" href="./images/TwitterLogo.png" type="image">
-        <script src="script.js" defer></script>
-        <style>
-html {
-    background-color: lightblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-body{
-    margin: 0;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    padding-bottom: 0px;
-}
-
-header img {
-    width: 70px;
-    height: 70px;
-    align-self: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 150px;
-}
-
-aside h1{
-    font-size: 35px;
-    color: #00aced;
-}
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#signInForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-#signInForm input {
-    font-size: 16px;
-    border-radius: 5px;
-    margin-bottom: 7px;
-}
-#profileSelect {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    gap: 5px 5px;
-}
-#profileSelect label {
-    object-fit: cover;
-}
-
-#profileSelect label img {
-    width: 75px;
-    height: 75px;
-    margin: 0 10px;
-    border: 2px solid #00aced;
-}
-
-#pictureRow {
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-}
-
-#pictureRow img {
-    width: 125px;
-    margin: 0 10px;
-    border: 2px solid #00aced;
-    border-radius: 10px;
-}
-
-footer{
-    min-height: 40px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
-}
-
-footer p {
-    font-size: 16px;
-    color: black;
-    margin: 10px;
-}
-
-@media screen and (max-width: 750px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    #pictureRow {
-        display: none;
-    }
-}
-        </style>
     </head>
     <body>
         <header>
-            <img src="../static/TwitterLogo.png" alt="TwitterIcon">
+            <img src="./images/TwitterLogo.png" alt="VOGELIcon">
             <h1>VOGEL</h1>
         </header>
         <main>
@@ -130,7 +18,7 @@ footer p {
                 <p>Everything I know about life I learned from the 90s.<br>Take a blast to the past.<br>Make VOGEL Great Again.</p>
             </aside>
             <section>
-                <h2>Select a Profile:</h2>
+                <h2>Select Your Character:</h2>
                 <form action="" id="profileSelect">
                     <label>
                         <input type="radio" name="profile" value="blockbuster">
@@ -181,31 +69,31 @@ footer p {
                         <img src="./images/profilePictures/tomagatchi.jpg" alt="tamagatchiProfile">
                     </label>
                 </form>
-                <form method="POST" action="" id="signInForm"> <!-- USERNAME AND PASSWORD -->
-                    <h2>New to VOGEL? Sign Up!</h2>
+                <form method="POST" action="" id="signInForm">
+                    <h2>New to VOGEL? Sign Up TODAY!</h2>
                     <label for="username">Username</label>
                     <input type="text" id="username" name="user">
                     <label for="password">Password</label>
-                    <input type="text" id="password" name="pass">
+                    <input type="password" id="password" name="pass">
                     <button type="submit">Sign up</button>
                 </form>
             </section>
         </main>
         <div id="pictureRow">
-            <img src="../static/90s images.jpg" alt="90sTV">
-            <img src="../static/90s movies.jpg" alt="90smovies">
-            <img src="../static/90sFOOD.jpg" alt="90sFood">
-            <img src="../static/90sGames.jpg" alt="90sGames">
-            <img src="../static/90sMovies.jpg" alt="90sMovies">
-            <img src="../static/90sTOYS.jpg" alt="90sTOYS">
-            <img src="../static/backtothe90s.jpg" alt="Backtothe90s">
-            <img src="../static/mrBucket.jpg" alt="bucket">
-            <img src="../static/90s movies.jpg" alt="movies">
-            <img src="../static/retroNBA.gif" alt="retroNBA">
-            
+            <img src="./images/signUpRow/90s images.jpg" alt="90sTV">
+            <img src="./images/signUpRow/90s movies.jpg" alt="90smovies">
+            <img src="./images/signUpRow/90sFOOD.jpg" alt="90sFood">
+            <img src="./images/signUpRow/90sGames.jpg" alt="90sGames">
+            <img src="./images/signUpRow/90sMovies.jpg" alt="90sMovies">
+            <img src="./images/signUpRow/90sTOYS.jpg" alt="90sTOYS">
+            <img src="./images/signUpRow/backtothe90s.jpg" alt="Backtothe90s">
+            <img src="./images/signUpRow/mrBucket.jpg" alt="bucket">
+            <img src="./images/signUpRow/90sFloppyDisk.jpg" alt="90sFloppyDisk">
+            <img src="./images/signUpRow/retroNBA.gif" alt="retroNBA">
         </div>
         <footer>
-             <p><b>Languages:</b> <a href="#">English</a>, <a href="#">Spanish</a>, <a href="#">Spanglish</a>, <a href="#">Coltonese</a></p>
+             <small><b>Languages:</b> <a href="#">English</a>, <a href="#">Spanish</a>, <a href="#">Spanglish</a>, <a href="#">Coltonese</a></small><br>
+             <small><a href="#">About</a> - <a href="#">Help</a> - <a href="#">Blog</a> - <a href="#">Mobile</a> - <a href="#">Status</a> - <a href="#">Jobs</a> - <a href="#">Privacy Terms</a> - <a href="#">Advertiser</a> - <a href="#">SwagGuy1</a> - <a href="#">Media</a> - <a href="#">Developers</a> - <a href="#">Resources</a> - &copy; 1995 VOGEL</small>
         </footer>
     </body>
 </html>
